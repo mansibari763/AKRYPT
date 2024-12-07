@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+      #giant{
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        padding: 70px;
+
+      }
+       #big{
+        width: 350px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+       }
+    #container{
+   
+            display: grid;
+            grid-template-columns: 70px 70px 70px 70px ;
+            grid-template-rows: 70px 70px 70px 70px 50px;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+.box{
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.sym{
+    background-color: black;
+    color: white;
+}
+button{
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+    </style>
+</head>
+<body>
+    <div id="giant">
+        <div id="big">
+            <div id="container">
+            <div class="box"></div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="sym">+</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="sym">-</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="sym">*</button>
+            <button style="background-color: rgb(234, 47, 47);">c</button>
+            <button>0</button>
+            <button class="sym">_</button>
+            <button class="sym">/</button>
+      </div>
+     </div>
+        
+    </div>
+    
+</body>
+</html>
+
+
