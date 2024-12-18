@@ -1,0 +1,28 @@
+#container{
+    display: grid;
+    grid-template-columns: 300px 200px;
+    gap: 10px;
+}
+#one{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 70px;
+    }
+#two{
+    background-color: red;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    }
+#three{
+    background-color:greenyellow;
+    height: 70px;
+     }
+#four{
+    background-color: greenyellow;
+    height: 70px;
+    }
+#five{
+    background-color: greenyellow;
+    height: 70px;
+   }

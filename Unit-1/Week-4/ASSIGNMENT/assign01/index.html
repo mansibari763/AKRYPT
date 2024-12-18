@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/364ebdf453.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+            nav{
+                width: vw;
+                height: 80px;
+                background-color: white;
+                display: flex;
+                justify-content: space-around;
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                color: #f35525;
+                font-size: medium;
+            }
+            li{
+                padding: 10px 0px 0px 70px;
+                font-size: 15px;
+            }
+            #logo{
+             font: 1em sans-serif;  
+             font-size: 25px;
+             padding: 20px 0px 0px 50px;
+            }
+            #homeimage{
+                width: 1240px; 
+            }
+            #btn{
+               width: 180px;
+               height: 40px;
+               background-color: black;
+               color: white;
+               display: flex;
+               justify-content: space-between;
+               border-radius: 30px;
+               margin-top: 15px;
+            }
+            i{
+                width: 40px;
+                height: 40px;
+                background-color: #f35525;
+                color: white;
+                text-align: center;
+                align-content: center;
+                font-size: 15px;
+                border-radius: 50%;
+            }
+            #container1{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                position: relative;
+                margin-top: 150px;
+            }
+            #box2{
+            width: 400px; 
+            height: 520px; 
+            }
+            p{
+                font-size: medium;
+                font-family: sans-serif;
+                padding: 0px 20px 0px 20px;
+            }
+            #smallbox{ 
+                width: 400px; 
+                height: 290px; 
+                background-color: rgb(252, 249, 249); 
+                border-radius: 20px;" 
+                position: relative;
+                padding-top: 20px;
+            }
+             #box3{
+                width: 250px; 
+                height: 550px;
+                border-radius: 20px; 
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            #box3a{
+                width: 200px; 
+                height: 400px; 
+                margin: auto; 
+                padding-top: 50px; 
+            }
+            .b3 h2{
+                padding-left: 80px;
+            }
+            #front{
+            position: relative;
+            margin-top: -250px;           
+            margin-left: 120px;
+        }
+        #container2{
+            margin-top: 150px;
+        }
+
+        #mini{
+            position: relative;
+            top: 100px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .minibox{
+            width: 250px; 
+            height: 100px; 
+            background-color: #ffeee9; 
+            border-radius: 10px;
+        }
+      .num{
+        font-size: 40px; 
+        float: left;         
+        padding-left: 30px; 
+        color: #f35525;
+      }
+      .para{
+        font-size: 16px; 
+        padding: 15px 50px 0px 100px;
+      }
+      #container3{
+        width: vw;
+        height: 800px;
+        background-color: #fafafa;
+        position: relative;
+        top: 200px;
+      }
+       .btn{
+        width: 150px; 
+        height: 50px; 
+        background-color: #1e1e1e; 
+        color: white; 
+        border-radius: 5px; 
+        font-size: 17px;
+        padding-left: px;
+        border: none;
+       }
+       #c2{
+        display: flex;
+        justify-content: space-around;
+       }
+       #btnbox{
+        display: flex;
+        gap: 20px;
+        padding: 15px 0px 0px 0px;
+       }
+       #c3{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 70px;
+       }
+       #c3box1{
+            width: 250px; 
+            height: 350px; 
+            background-color:white; border-radius: 10px; 
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+        }
+        .spn{
+            float: right; 
+            font-size: 20px; color: #1e1e1e;"
+        }
+        .para3{
+            font-size: 18px; 
+            color:gray; 
+            padding: 5px 0px 5px 0px;"
+        }
+        .c4{
+        width: 340px; 
+        height: 550px; 
+        border-radius: 10px;  
+        background-color: #fafafa; 
+        padding-left: 40px;
+       }
+       .image{
+             border-radius: 10px; 
+             width: 300px;
+       }
+       #schedule{
+                width: 150px; 
+                height: 40px; 
+                background-color: #1e1e1e; 
+                color: white; 
+                border-radius: 30Px; 
+                text-align: center; 
+                align-content: center; 
+                margin: auto;
+                margin-top: 50px;
+       }
+       #container4{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        margin-top: 100px;
+       }
+       #back{
+        width: 1240px;
+        height: 600px;
+        margin-top: 150px;
+       }
+       #container5{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+        position: relative;
+        margin-top: -300px;
+        }
+        #boxx{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        gap: 50px;
+        }
+       #map{
+        width: 600px;
+        height: 500px;
+        border-radius: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+       }
+       .boxaa{
+        width: 250px;
+        height: 120px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        align-content: center;
+        text-align: center;
+        }
+        .icon{
+        float: left;
+        padding: 15px 0px 0px 30px;
+        width: 50px;
+        height: 45px;
+        }
+        form{
+        width: 350px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: white;
+        }
+        input{
+        width: 330px;
+        height: 45px;
+        border-radius: 30px;
+        border: none;
+        background-color: #f1efef; 
+        }
+        textarea{
+        border-radius: 20px;
+        border: none;
+        background-color: #f1efef; 
+        }
+        #message{
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        background-color: #1e1e1e; 
+        color: white; 
+        }
+        footer{
+            width: vw;
+            height: 100px;
+            background-color: #1e1e1e;
+            color: white;
+            margin-top: 150px;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" id="logo"><b>VILLA</b></a>
+            <ul>
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#" class="link">Properties</a></li>
+                <li><a href="#" class="link">Property Details</a></li>
+                <li><a href="#" class="link">Contact Us</a></li>
+            </ul>
+            <div id="btn">
+                <div style="width: 40px; height: 40px; background-color: #f35525; text-align: center; align-content: center; border-radius: 50%;">
+                    <i class="fa-solid fa-calendar"></i> 
+                </div>
+                   <span style="color: white; padding-right: 20px; align-content: center;">Schedule a visit</span>      
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <img id="homeimage" src="https://assets-news.housing.com/news/wp-content/uploads/2022/02/27121904/featured-compressed-67.jpg" >
+        <div id="container1">
+            <div id="box1"><img style="width: 300px;" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/featured.jpg" alt=""></div>
+            
+            <div id="box2">
+                <h4 style="color: #f35525;">|Features</h4>
+                <h2 style="font-size: 40px; padding: 0px 130px 0px 20px;">Best Apartment & Sea Views</h2>
+                <div id="smallbox">
+                    <br>
+                    <p style="color: #f35525;">Best useful links?</p><hr>
+                    <p>Get the best villa website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the best free CSS templates in the world. Please tell your friends about it.</p><hr>
+                    <p>How does this works?</p><hr>
+                    <p>Why is Villa Agency the best?</p>
+                </div>
+            </div>
+
+            <div id="box3">
+
+                <div id="box3a">
+                    <br>    
+                    <div class="b3">
+                            <img style="float: left;" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-01.png" alt="">
+                            <h2>250 m2<br><span style="font: 15px sans-serif; color: gray;">Total Flat Space</span></h2>
+                    </div>
+                    <hr>
+                    <div class="b3">               
+                            <img style="float: left;" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-02.png" alt="">
+                            <h2>Contract<br><span style="font: 15px sans-serif; color: gray;">Contract ready</span></h2>
+                    </div>
+                    <hr>
+                    <div class="b3">
+                            <img style="float: left;" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-03.png" alt="">
+                            <h2>Payment<br><span style="font: 15px sans-serif; color: gray;">Payment Process</span></h2>
+                    </div>
+                    <hr>
+                    <div class="b3">
+                            <img style="float: left;" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-04.png" alt="">
+                            <h2>Safety<br><span style="font: 15px sans-serif; color: gray;">24/7 Under Control</span></h2>
+                    </div>
+                        
+                </div>
+        
+            </div>
+        </div>
+
+        <div id="container2">
+            <img id="blur" style="width: 1240px; height: 700px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZP1esN0dJ1SUdrzMN4MzW3cWmCICN3ejwQoZx0Olc7gXkkE1-YK4QG_4&s" alt="">
+            <img id="front" style="width: 1000px; border-radius: 10px;" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/video-frame.jpg" alt="">
+        </div>
+
+        <div id="mini">
+            <div class="minibox">
+               <h2 class="num">34</h2>
+               <p class="para">Buildings Finished Now</p>
+            </div>
+          <div class="minibox">
+              <h2 class="num">12</h2>
+              <p class="para">Years Experience</p>
+           </div>
+           <div class="minibox">
+               <h2 class="num">24</h2>
+               <p class="para">Awards Won 2023</p>
+           </div>
+        </div>
+
+        <div id="container3">
+            <div id="c1" style="padding: 10px 0px 0px 80px ;">
+                <p style="color: #f35525;">|BEST DEALS</p>
+            </div>
+            <div id="c2">
+                <h1>Find Your Best Deal Right Now!</h1>
+                <div id="btnbox">
+                    <button class="btn" style="background-color: #f35525;">Apartment</button>
+                    <button class="btn">Villa House</button>
+                    <button class="btn">Penthouse</button>
+                </div>
+            </div>
+            <div id="c3">
+    
+                <div id="c3box1" >
+                    <div style="width: 220px; height: 320px; position: relative; top: 15px; left: 15px;">
+                        <p style="font-size: 18px; color:gray; padding: 0px 0px 5px 0px;">Total Flat Space <span class="spn"><b>185 m2</b></span></p><hr>
+                        <p class="para3">Floor number <span class="spn"><b>26th</b></span></p><hr>
+                        <p class="para3">Number of rooms <span class="spn"><b>4</b></span></p><hr>
+                        <p class="para3">Parking Available <span class="spn"><b>Yes</b></span></p><hr>
+                        <p class="para3">Payment Process <span class="spn"><b>Bank</b></span></p>
+                    </div>
+                </div>
+    
+                <img style="width: 470px; height: 320px;" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/deal-01.jpg" alt="">
+            
+                    <div style="width: 270px; height: 500px; ">
+                        <h3>Extra Info About Property</h3><br>
+                        <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</p><br>
+                        <p style="font-size: 18px;">When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
+                        <div id="btn">
+                            <div style="width: 40px; height: 40px; background-color: #f35525; text-align: center; align-content: center; border-radius: 50%;">
+                                <i class="fa-solid fa-calendar"></i> 
+                            </div>
+                               <span style="color: white; padding-right: 20px; align-content: center;">Schedule a visit</span>      
+                        </div>
+                    </div>
+                
+               
+            </div>
+    
+        </div>
+
+        <div style="text-align: center; position: relative; padding-top: 100px;">
+            <p style="color: #f35525;">|PROPERTIES</p>
+            <h1>We Provide The</h1>
+            <h1>Best Property</h1>
+            <h1>You Like</h1>
+        </div>
+
+        <div id="container4">
+
+            <div class="c4">
+                <div style="width: 300px; height: 550px;">
+                    <img class="image" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-01.jpg" alt="">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 130px; height: 35px; text-align: center; align-content: center; border-radius: 6px; background-color: #FBD9CF; color: rgb(56, 54, 54); margin: 20px 0px 0px 0px;">Luxury Villa</div>
+                        <h2 style="color: #f35525;">$2.264.000</h2>
+                    </div>
+                    <h3>18 New Street Miami, OR 97219</h3>
+                    <span>Bedrooms:<b>8</b></span>  
+                    <span style="padding-left: 50px;">Bathroom:<b>8</b></span>
+                    <span style="padding-right: 50px;">Area:<b>545m2</b></span>
+                    <span>Floor:<b>3</b></span>
+                    <span style="padding-right: 50px;">Parking:<b>6spots</b></span>
+                    <br><br><hr>  
+                    <div id="schedule">Schedule a visit</div>
+                </div>
+            </div>
+
+            <div class="c4">
+                <div style="width: 300px; height: 550px;">
+                    <img class="image" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-02.jpg" alt="">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 130px; height: 35px; text-align: center; align-content: center; border-radius: 6px; background-color:#FBD9CF; color: rgb(56, 54, 54); margin: 20px 0px 0px 0px;">Luxury Villa</div>
+                        <h2 style="color: #f35525;">$1.180.000</h2>
+                    </div>
+                    <h3>54 Mid Street Florida, OR 27001</h3>
+                    <span>Bedrooms:<b>6</b></span>  
+                    <span style="padding-left: 50px;">Bathroom:<b>5</b></span>
+                    <span style="padding-right: 50px;">Area:<b>1450m2</b></span>
+                    <span>Floor:<b>3</b></span><br>
+                    <span style="padding-right: 50px;">Parking:<b>8 spots</b></span>
+                    <br><br><hr>  
+                    <div id="schedule">Schedule a visit</div>
+                </div>
+            </div>
+
+            <div class="c4">
+                <div style="width: 300px; height: 550px;">
+                    <img class="image" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-03.jpg" alt="">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 130px; height: 35px; text-align: center; align-content: center; border-radius: 6px; background-color:#FBD9CF; color: rgb(56, 54, 54); margin: 20px 0px 0px 0px;">Luxury Villa</div>
+                        <h2 style="color: #f35525;">$1.460.000</h2>
+                    </div>
+                    <h3>26 Old Street Miami, OR 38540</h3>
+                    <span>Bedrooms:<b>5</b></span>  
+                    <span style="padding-left: 50px;">Bathroom:<b>4</b></span>
+                    <span style="padding-right: 50px;">Area:<b>225m2</b></span>
+                    <span>Floor:<b>3</b></span><br>
+                    <span style="padding-right: 50px;">Parking:<b>10spots</b></span>
+                    <br><br><hr>  
+                    <div id="schedule">Schedule a visit</div>
+                </div>
+            </div>
+
+            <div class="c4">
+                <div style="width: 300px; height: 550px;">
+                    <img class="image" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-04.jpg" alt="">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 130px; height: 35px; text-align: center; align-content: center; border-radius: 6px; background-color:#FBD9CF; color: rgb(56, 54, 54); margin: 20px 0px 0px 0px;">Apartment</div>
+                        <h2 style="color: #f35525;">$584.500</h2>
+                    </div>
+                    <h3>12 New Street Miami, Or 12650</h3>
+                    <span>Bedrooms:<b>4</b></span>  
+                    <span style="padding-left: 50px;">Bathroom:<b>3</b></span>
+                    <span style="padding-right: 50px;">Area:<b>125m2</b></span>
+                    <span>Floor:<b>25th</b></span><br>
+                    <span style="padding-right: 50px;">Parking:<b>2 cars</b></span>
+                    <br><br><hr>  
+                    <div id="schedule">Schedule a visit</div>
+                </div>
+            </div>
+
+            <div class="c4">
+                <div style="width: 300px; height: 550px;">
+                    <img class="image" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-05.jpg" alt="">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 130px; height: 35px; text-align: center; align-content: center; border-radius: 6px; background-color: #FBD9CF; color: rgb(56, 54, 54); margin: 20px 0px 0px 0px;">Penthouse</div>
+                        <h2 style="color: #f35525;">$925.600</h2>
+                    </div>
+                    <h3>34 Beach Street Miami, OR 42680
+                    </h3>
+                    <span>Bedrooms:<b>4</b></span>  
+                    <span style="padding-left: 50px;">Bathroom:<b>4</b></span>
+                    <span style="padding-right: 50px;">Area:<b>180m2</b></span>
+                    <span>Floor:<b>38th</b></span><br>
+                    <span style="padding-right: 50px;">Parking:<b>2 cars</b></span>
+                    <br><br><hr>  
+                    <div id="schedule">Schedule a visit</div>
+                </div>
+            </div>
+
+            <div class="c4">
+                <div style="width: 300px; height: 550px;">
+                    <img class="image" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-06.jpg" alt="">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 130px; height: 35px; text-align: center; align-content: center; border-radius: 6px; background-color: #FBD9CF; color: rgb(56, 54, 54); margin: 20px 0px 0px 0px;">Modern Condo</div>
+                        <h2 style="color: #f35525;">$450.000</h2>
+                    </div>
+                    <h3>12 New Street Miami, Or 12650</h3>
+                    <span>Bedrooms:<b>3</b></span>  
+                    <span style="padding-left: 50px;">Bathroom:<b>2</b></span>
+                    <span style="padding-right: 50px;">Area:<b>165m2</b></span>
+                    <span>Floor:<b>26th</b></span><br>
+                    <span style="padding-right: 50px;">Parking:<b>3 cars</b></span>
+                    <br><br><hr>  
+                    <div id="schedule">Schedule a visit</div>
+                </div>
+            </div>         
+        </div>
+
+         <img id="back" src="data:image/jpeg;base64,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" alt="">     
+       <div id="container5">
+        <div id="boxx">
+            <img id="map" src="map.PNG" alt="">
+        <div class="boxaa">
+            <img class="icon" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/phone-icon.png" alt="">
+            <h3>010-020-0340</h3><span>Phone Number</span>
+          </div>
+          <div class="boxaa">
+            <img class="icon" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/email-icon.png" alt="">
+            <h3>info@villa.com</h3><span>Business E-mail</span>
+          </div>
+        </div>
+        
+       <form action="">
+        <p>Full Name</p>
+        <input type="text" placeholder="   Your Name..."><br><br>
+        <p>Email Address</p>
+        <input type="text" placeholder="   Your E-Mail..."><br><br>
+        <p>Subject</p>
+        <input type="text" placeholder="   Subject..."><br><br>
+        <p>Message</p>
+        <textarea cols="45" rows="10" placeholder="   Your Message..."></textarea><br><br><br><br>
+        <button id="message">Send Message</button>
+        </form>
+    </div>
+    </main>
+    <footer>
+        Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design: TemplateMo
+    </footer>
+</body>
+</html>
