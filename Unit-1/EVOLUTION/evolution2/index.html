@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/364ebdf453.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        nav{
+            width: vw;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo{
+            font-size: 25px;
+            color: #32C36C;
+            font-weight: bold;
+            font-size: 35px;
+            padding: 10px 0px 0px 50px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+            padding: 10px 0px 0px 200px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        a:hover{
+            color: #32C36C;
+        }
+        button{
+            width: 220px;
+            height: 70px;
+            background-color:  #32C36C;
+            border: none;
+            color: white;
+            font-size: 17px;
+
+        }
+        #front{
+            width: 1240px;
+        }
+        #container1{
+            display: flex;
+            
+        }
+        #container2{
+            display: flex;
+            margin-top: 100px;
+        }
+       #c2box{
+        background-color: whitesmoke;
+        padding: 50px 50px 50px 50px;
+       }
+       h1{
+        font-size: 40px;
+       }
+       h4{
+        color: #32C36C;
+       }
+       .explore{
+        background-color: #32C36C;
+        border: none;
+        width: 200px;
+        height: 60px;
+        border-radius: 40px;
+       } 
+       #container3{
+        margin-top: 100px;
+       }
+       #c3{
+        width: 350px;
+        height: 400px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        border-radius: 10px;
+       }.c3img{
+        width: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       }
+       #boxes{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 100px;
+       }
+       #heading{
+        text-align: center;
+       }
+       p{
+        color: gray;
+       }
+       #container4{
+        display: flex;
+        background-color: whitesmoke;
+        margin-top: 100px;
+       }
+       form{
+        padding-left: 50px;
+       }
+       .text{
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        margin: 20px 20px 0px 0px;
+       }
+       @media only screen and (min-winth:480px) {
+        body{
+            background-color: blueviolet;
+        }
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <a id="logo" href="#">Solartec</a>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="#">PAGES<i class="fa-solid fa-chevron-down"></i></a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <button>Get A Quote
+            <b><i class="fa-solid fa-arrow-right"></i></b>
+        </button>
+    </nav>
+    
+    <main>
+
+        <img id="front" src="https://themewagon.github.io/solartec/img/carousel-1.jpg" alt="">
+
+        <div id="container1">
+            <div style="width: 250px; height: 200px; padding: 30px; ">
+                <h1>3453</h1>
+                <h3>Happy Customers</h3>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</p>
+            </div>
+            <div style="width: 250px; height: 200px; padding: 30px; ">
+                <h1><i style="padding-right: 20px; color: #32C36C; font-size: 50px;" class="fa-solid fa-circle-check"></i>4234</h1>
+                <h3>Project Done</h3>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</p>
+            </div>
+            <div style="width: 250px; height: 200px; padding: 30px; ">
+                <h1>3123</h1>
+                <h3>Awards Win</h3>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</p>
+            </div>
+            <div style="width: 250px; height: 200px; padding: 30px; ">
+                <h1><i style="padding-right: 20px; color: #32C36C; font-size: 50px;" class="fa-solid fa-user-group"></i>1831</h1>
+                <h3>Expert Workers</h3>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</p>
+            </div>
+            
+        </div>
+
+        <div id="container2">
+           <img style="width: 620px;" src="https://themewagon.github.io/solartec/img/about.jpg" alt=""> 
+            <div id="c2box">
+                <h4>ABOUT US</h4>
+                <h1>25+ Years Experience In Solar & Renewable Energy Industry</h1>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                <p><i style="padding-right: 20px; color: #32C36C;" class="fa-solid fa-circle-check"></i>Diam dolor diam ipsum</p>
+                <p><i style="padding-right: 20px; color: #32C36C;" class="fa-solid fa-circle-check"></i>Aliqu diam amet diam et eos</p>
+                <p><i style="padding-right: 20px; color: #32C36C;" class="fa-solid fa-circle-check"></i>Tempor erat elitr rebum at clita</p>
+                <br><button class="explore">Explore More</button>
+            </div> 
+         </div>
+
+         <div id="container3">
+
+            <div id="heading">
+                <h4>Our Services</h4>
+                <h1>We Are Pioneers In The World Of </h1><h1>Renewable Energy</h1> 
+            </div>
+
+           <div id="boxes">
+            <div id="c3">
+                <img class="c3img" src="https://themewagon.github.io/solartec/img/img-600x400-1.jpg" alt="">
+                <div style="padding-left: 20px;">
+                    <h2>Solar Panels</h2>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a style="color: #32C36C;" href="#">Read More<b><i class="fa-solid fa-arrow-right"></i></b></a>
+                </div>
+            </div>
+
+            <div id="c3">
+                <img class="c3img" src="https://themewagon.github.io/solartec/img/img-600x400-2.jpg" alt="">
+                <div style="padding-left: 20px;">
+                    <h2>Wind Turbines</h2>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a style="color: #32C36C;" href="#">Read More<b><i class="fa-solid fa-arrow-right"></i></b></a>
+                </div>
+            </div>
+
+            <div id="c3">
+                <img class="c3img" src="https://themewagon.github.io/solartec/img/img-600x400-3.jpg" alt="">
+                <div style="padding-left: 20px;">
+                    <h2>Hydropower Plants</h2>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a style="color: #32C36C;" href="#">Read More<b><i class="fa-solid fa-arrow-right"></i></b></a>
+                </div>
+            </div>
+
+            
+            <div id="c3">
+                <img class="c3img" src="https://themewagon.github.io/solartec/img/img-600x400-4.jpg" alt="">
+                <div style="padding-left: 20px;">
+                    <h2>Solar Panels</h2>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a style="color: #32C36C;" href="#">Read More<b><i class="fa-solid fa-arrow-right"></i></b></a>
+                </div>
+            </div>
+
+            <div id="c3">
+                <img class="c3img" src="https://themewagon.github.io/solartec/img/img-600x400-5.jpg" alt="">
+                <div style="padding-left: 20px;">
+                    <h2>Wind Turbines</h2>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a style="color: #32C36C;" href="#">Read More<b><i class="fa-solid fa-arrow-right"></i></b></a>
+                </div>
+            </div>
+
+            <div id="c3">
+                <img class="c3img" src="https://themewagon.github.io/solartec/img/img-600x400-6.jpg" alt="">
+                <div style="padding-left: 20px;">
+                    <h2>Hydropower Plants</h2>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <a style="color: #32C36C;" href="#">Read More<b><i class="fa-solid fa-arrow-right"></i></b></a>
+                </div>
+            </div>
+
+           </div>
+
+         </div>
+
+         <div id="container4">
+            <img style="width: 620px;" src="https://themewagon.github.io/solartec/img/quote.jpg" alt="">
+            <form action="submit">
+                <h4>Free Quote</h4>
+                <h1>Get A Free Quote</h1>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                <input class="text" type="text" placeholder="  Your Name">
+                <input class="text" type="text" placeholder="  Your E-mail"><br>
+                <input class="text" type="text" placeholder="  Your Mobile">
+                <input class="text" type="select" placeholder="  Select A Service"><br>
+                <textarea style="width: 520px; height: 70px;" class="text" name="" id="" rows="3" cols="30" placeholder="Special Note"></textarea>
+                <button style=" margin-top: 50px;" class="explore">Submit</button>
+            </form>
+         </div>
+    </main>
+    
+</body>
+</html>
