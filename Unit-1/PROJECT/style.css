@@ -1,0 +1,861 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+}
+#navbar{
+    position:fixed; 
+    width: 100%;
+    margin-top: -10px;
+    background-color: aliceblue;
+    position: 0;
+}
+/* horizotal line */
+#hrline{
+    background-color: orangered;
+    height: 15px;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.leftnav{
+    background-color: orangered;
+    color:white;
+    font-size: 40px;
+    padding: 20px 30px;
+}
+.rightnav{
+    display: flex;
+    padding: 30px 40px;
+}
+.a1{
+    text-decoration: none;
+    color:orangered;
+}
+.a2{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+.number{
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.manu{
+    display:none;
+}
+
+/* background image */
+#cont1{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    background-image: url(https://themewagon.github.io/logistica/img/carousel-1.jpg);
+    background-size: cover;
+    padding: 150px 80px 0px 80px;
+}
+.text{
+    width: 700px;
+    color: white;
+}
+ .text2{
+    display: flex;
+    gap: 10px;
+    margin-top: -40px;
+}
+h2{
+    font-size: 35px;
+}
+.head1{
+    font-size: 70px;
+    margin-top: -15px;
+}
+.prg{
+    font-size: 25px;
+    color: white;
+    font-weight: 800;
+    margin-top: -20px;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+    margin-top: 32px;
+}
+.btn1{
+    width: 180px;
+    height: 60px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+}
+.btn2{
+    width: 180px;
+    height: 60px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+}
+.icons{
+    padding: 150px 0px;
+    color: white;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+#icn{
+    margin: 15px 18px;
+    font-size: larger;
+}
+
+/* about us */
+#cont2{
+    display: flex;
+    gap: 50px;
+    margin: 200px 0px;
+}
+.img1{
+    width: 650px;
+    height: 650px;
+}
+.abt{
+    width: 500px;
+}
+.box1{
+    margin-top: -20px;
+}
+.head2{
+    font-size: 38px;
+}
+.prg1{
+    font-size: 19px;
+    color:rgba(0, 0, 0, 0.728);
+    margin-top: 50px;
+}
+.box2{
+    display: flex;
+    gap: 50px;
+    margin-top: 55px;
+}
+.box3{
+    width: 250px;
+}
+.prg2{
+    font-size: 19px;
+    color:rgba(0, 0, 0, 0.728);
+    margin-top: -20px;
+}
+#icn2{
+    font-size: 60px;
+    color:orangered;
+}
+h3{
+    font-size: 23px;
+}
+.btn3{
+    width: 200px;
+    height: 60px;
+    background-color: orangered;
+    color:white;
+    font-size: larger;
+    border: none;
+    margin-top: 30px;
+}
+
+/* some facts */
+#cont3{
+    display:flex;
+    gap: 30px;
+}
+.fact{
+    width: 500px;
+    margin-left: 100px;
+}
+.hdpn{
+    width: 60px;
+    height: 60px;
+    background-color: orangered;
+    color:white;
+}
+#icn3{
+    font-size: 30px;
+    margin:15px 10px 10px 15px;
+}
+.text3{
+    margin-top: -20px;
+}
+.boxs{
+    display:grid;
+}
+.div1{
+    width: 220px;
+    height: 130px;
+    padding: 0px 0px 10px 20px;
+    background-color: brown;
+    color:white;
+}
+.div2{
+    width: 220px;
+    height: 130px;
+    padding: 0px 0px 10px 20px;
+    background-color: skyblue;
+    color:white;
+}
+.div3{
+    width: 220px;
+    height: 130px;
+    padding: 0px 0px 10px 20px;
+    margin-top: 90px;
+    background-color: green;
+    color:white;
+}
+
+/* our services */
+#cont4{
+    margin: 200px 0px;
+}
+.text4{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: center;
+}
+.table{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    margin-left: 50px;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+.prg3{
+    font-size: large;
+    color: grey;
+}
+.btn4{
+    width: 60px;
+    height: 50px;
+    background-color: orangered;
+    color:white;
+    border:none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/*our features*/
+#features{
+    display: flex;
+    justify-content: space-between;
+}
+#feat{
+    width: 600px;
+    height: 550px;
+    padding-left: 30px;
+}
+.fimag{
+    width: 600px;
+    height: 550px;
+}
+.feat1{
+    margin-top: 50px;
+    padding-right: 100px;
+}
+.ficon{
+    color: #ff3e41;
+    font-size: 40px;
+    float: left;
+    padding-right: 20px;
+    width: 90px;
+    height: 90px;
+}
+
+/* pricing plan */
+#pricing{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.pricebox{
+    width: 350px;
+    height: 460px;
+    background-color: #fff;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+.pb1{
+    padding-left: 30px;
+}
+.pb2{
+    padding-left: 30px;
+}
+h5{
+    font-size: 20px;
+    color: #ff3e41;
+}
+.tick{
+    color: green;
+    padding-right: 15px;
+    font-weight:bolder;
+}
+.point{
+    color: #555555;
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+/* get a quote */
+#quote{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.get{
+    width: 500px; 
+    height: 400px;
+    padding-top: 5px;
+}
+form{
+    width: 560px; 
+    height: 400px; 
+    /* background-color: #f8f2f0; */
+}
+#felement{
+    margin-left: 15px;
+    padding: 30px;
+    background-color: #f8f2f0;
+}
+.frm{
+    width: 220px;
+    height: 50px;
+    border: none;
+    margin: 20px 10px 0px 0px;
+    font-size: 1rem;
+    padding: 5px;
+}
+textarea{
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    font-size: 17px;
+    padding: 10px;
+}
+#submit{
+    width: 450px;
+    height: 50px;
+    background-color: #ff3e41;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* our team */
+.head{
+    text-align: center;
+    /* position: relative; */
+    margin-top: 170px;
+}
+h6{
+    color: #51CFED;
+    font-size: 20px;
+    margin-top: -10px;
+}
+h1{
+    margin-top: -20px;
+    font-size: 38px;
+}
+#team{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.membox{
+    width: 260px; 
+    height: 400px; 
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);}
+.member{
+    width: 220px;
+    height: 360px;
+    padding: 20px;
+}
+.memimg{
+    width: 220px;
+}
+.name{
+    font-size: 20px;
+}
+.designation{
+    color: #555555; 
+    margin-top: -15px; 
+    font-size: 17px;
+}
+.arrow{
+    background-color: #ff3e41;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* testoimoanial */
+#testimonial{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.test{
+    width: 340px;
+    height: 200px;
+    padding: 20px;
+}
+.para{
+    color: #555555;
+    font-size: 17px;
+    margin-top: 30px;
+    text-align: left;
+}
+#dots{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.dot1{
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ff3e41;
+    border: 5px solid white;
+}
+
+/* footer */
+footer{
+    width: vw;
+    height: 450px;
+    background-color: black;
+    /* position: relative; */
+    margin-top: 170px;
+}
+#foot1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.f1{
+    width: 230px;
+}
+h2{
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+    color: white;
+}
+.ficon1{
+    padding-right: 10px;
+}
+#email{
+    width: 130px; 
+    height: 40px; 
+    border: none; 
+    font-size: 17px; 
+}
+#signup{
+    background-color: #ff3e41; 
+    color: white; 
+    border: none; 
+    width: 80px; 
+    height: 40px;  
+    font-size: 16px;
+}
+#ebox{
+    background-color: white; 
+    width: 225px; 
+    height: 50px; 
+    align-content: center;
+}
+#foot2{
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0px 60px 0px 60px;
+}
+
+@media screen and (min-width:100px) and (max-width:480px) {
+    /* navbar */
+    #navbar{
+        width: 480px;
+        position:fixed;
+        background-color: white;
+    }
+    /* horizotal line */
+    #hrline{
+        width: 480px;
+        background-color: orangered;
+    }    
+    .rightnav{
+        display: none;
+    }
+    .manu{
+        display: block;
+        padding: 30px;
+    }
+
+    /* background image */
+    #cont1{
+        width: 470px;
+        gap:10px;
+        padding: 70px 0px 0px 10px;
+    }
+    .text{
+        width: 320px;
+    }
+    h2{
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+    .head1{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .prg{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .icons{
+        padding-right: 10px;
+    }
+
+    /* about us */
+    #cont2{
+        width: 100%;
+        display: grid;
+        gap: 10px;
+    }
+    .img1{
+        width: 480px;
+    }
+    .abt{
+        width:480px;
+    }
+
+    /* some facts */
+    #cont3{
+        width: 480px;
+        display: grid;
+    }
+    .fact{
+        width: 480px;
+        margin: 0px;
+    }
+    .boxs{
+        display: flex;
+        gap:20px;
+    }
+    .div1{
+        width: 200px;
+    }
+    .div2{
+        width: 200px;
+    }
+    .div3{
+        width: 200px;
+        margin:0px 0px 0px 120px;
+    }
+
+    /* our services */
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /*our features*/
+    #features{
+        width: 480px;
+        display: grid;
+        gap:50px;
+    }
+    #feat{
+        width: 450px;
+        padding-left: 30px;
+    }
+    .fimag{
+        width: 440px;
+        height: 500px;
+        padding: 10px;
+    }
+
+    /* pricing plan */
+    #pricing{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .pricebox{
+       margin-left: 50px;
+    }
+
+    /* get a quote */
+    #quote{
+        width: 440px;
+        display: grid;
+        padding: 0px 20px;
+    }
+    .get{
+        width: 440px; 
+        height: 400px;
+        padding-left: 80px;
+    }
+    form{
+        width: 450px; 
+        height: 400px; 
+        margin-left: 20px;
+    }
+    #felement{
+        background-color: #f8f2f0;
+    }
+    textarea{
+        width: 350px;
+    }
+    #submit{
+        width: 380px;
+    }
+
+    /* our team */
+    #teammember{
+        display: grid;
+        margin-top: 200px;
+    }
+    #team{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        padding-left: 50px;
+    }
+
+    /* testoimoanial */
+    #testimonial{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 80px;
+    }
+    #dots{
+        width: 460px;
+        padding: 10px;
+    }
+
+    /* footer */
+    footer{
+        width: 480px;
+        height: 1200px;
+    }
+    #foot1{
+        display: grid;
+        justify-content: left;
+        padding: 30px 0px 0px 20px;
+    }
+    hr{
+        margin-top: 20px;
+    }
+    #foot2{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    #ebox{
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        padding: 10px 10px 0px 10px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    /* navbar */
+    #navbar{
+        position:fixed;
+        background-color: white;
+    } 
+    /* horizotal line */
+    #hrline{
+        width: 768px;
+        background-color: orangered;
+    }  
+  
+    .rightnav{
+        display:none;
+    }  
+    .manu{
+        display:block;
+        padding: 30px;
+    }
+
+    /* background image */
+    #cont1{
+        width: 710px;
+        gap:30px;
+        padding: 50px 15px 0px 40px;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+    .head1{
+        font-size: 70px;
+    }
+    .prg{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    /* about us */
+    #cont2{
+        width: 650px;
+        padding: 59px;
+        display:grid;
+        justify-content: center;
+    }
+    .abt{
+        padding-left: 50px;
+    }
+    .box3{
+        width: 300px;
+    }
+
+    /* some facts */
+    #cont3{
+        width: 650px;
+        padding: 59px;
+        display: grid;
+        gap: 20px;
+    }
+    .fact{
+        width: 550px;
+    }
+    .box2{
+        margin-bottom: 50px;
+    }
+    .boxs{
+        display: flex;
+        gap: 50px;
+        padding-left: 80px;
+    }
+    .div3{
+        gap: 50px;
+        margin: 0px 0px 0px 220px;
+    }
+
+    /* our services */
+    #cont4{
+        width: 728px;
+        padding: 20px;
+    }
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        gap:30px;
+    }
+    .table{
+        margin-left: 0px;
+    }
+
+    /*our features*/
+    #features{
+        width: 768px;
+        display: grid;
+        gap:50px;
+    }
+    img{
+        margin-left: 20px;
+    }
+
+    /* get a quote */
+    #quote{
+        display: grid;
+    }
+    form{
+        width: 550px;
+        height: 500px;
+    }
+
+    /* our team */
+    #team{
+        width: 700px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 50px;
+    }
+    .member{
+        padding: 30px;
+    }
+
+    /* testoimoanial */
+    .head{
+        width: 748px;
+        padding: 10px;
+    }
+    #testimonial{
+        width: 748px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #dots{
+        width: 748px;
+        padding: 10px;
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: 1200px;
+    }
+    #foot1{
+        display: grid;
+        justify-content: left;
+        padding: 30px 0px 0px 20px;
+    }
+    hr{
+        margin-top: 10px;
+    }
+    #foot2{
+        display: flex;
+        justify-content: space-between;
+        /* text-align: center; */
+    }
+    #ebox{
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        padding: 10px 10px 0px 10px;
+    }   
+}
+
+
+

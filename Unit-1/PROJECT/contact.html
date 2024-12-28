@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/caaf1926e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+    body{
+        margin: 0;
+    }
+    #navbar{
+        position:fixed; 
+        width: 100%;
+        margin-top: -10px;
+        background-color: aliceblue;
+        position: 0;
+    }
+/* horizontal line */
+    #hrline{
+        background-color: orangered;
+        height: 15px;
+    } 
+/* navbar */
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .leftnav{
+        background-color: orangered;
+        color:white;
+        font-size: 40px;
+        padding: 20px 30px;
+    }
+    .rightnav{
+        display: flex;
+        padding: 30px 40px;
+    }
+    .a1{
+        text-decoration: none;
+        color:orangered;
+    }
+    .a2{
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+    }
+    .number{
+        display: flex;
+        gap: 15px;
+        margin-left: 20px;
+        font-size: larger;
+    }
+    .manu{
+        display:none;
+    }
+
+    /* background image */
+    #cont1{
+        height: 200px;
+        background-image: url(https://themewagon.github.io/logistica/img/carousel-1.jpg);
+        background-size: cover;
+        padding: 120px 0px 70px 50px;
+        color:aliceblue;
+        font-size: larger;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .txt{
+        font-size: 50px;
+    }
+
+    /* contact */
+    #contact{
+        /* height: 600px; */
+        display: flex;
+        gap: 50px;
+        margin: 180px 0px 200px 50px;
+    }
+    .contact{
+        width: 550px;
+        margin-left: 0px;
+    }
+    h3{
+        color: skyblue;
+        margin-top: 5px;
+    }
+    h1{
+        font-size: 40px;
+        margin-top: -10px;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        padding: 20px;
+        background-color:antiquewhite;
+    }
+    input{
+        padding: 20px 0px 30px 10px;
+    }
+    .subject{
+        padding: 20px 0px 30px 10px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .message{
+        padding: 20px 0px 30px 10px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    .btn{
+        height: 50px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: #ff3e41;
+        border: none;
+        font-size: larger;
+        color: white;
+    }
+    .img{
+        background-image: url(https://www.google.com/maps/vt/data=24CuQHNjouF4R3geht8iFH1-gm_vuFVLscYSftn8U-L7-s0PYkV9Qw4PAgGMZDTNVrYqUvrpZDtcglTRWgqnwgxr47pssbshyiL9-6T_-eukevDk8XWdg07wdTnoGAEIGpbI0mvTy5tWsD1zo6qWLa5oV0-LuvY6JvebdW5LDX69rXmQyIefKrtqDwEl-sukT_i6NA4RvhAKeZCAd2o_oIjn1j-F4zkH9jxE9n8d-WB2cQ1rmFptfMz1iJcDqtuaxOcuLEwswx-55fKkqdq6MUsiT3VkSI-R);
+        width: 600px;
+        height: 600px;
+    }
+    .area{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 80px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: white;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid white;
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: 430px;
+        background-color: black;
+        margin-top: 170px;
+    }
+    #foot1{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+    .f1{
+        width: 230px;
+    }
+    h2{
+        color: white;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    p{
+        color: white;
+    }
+    .ficon1{
+        padding-right: 10px;
+    }
+    #email{
+        width: 130px; 
+        height: 40px; 
+        border: none; 
+        font-size: 17px; 
+    }
+    #signup{
+        background-color: #ff3e41; 
+        color: white; 
+        border: none; 
+        width: 80px; 
+        height: 40px;  
+        font-size: 16px;
+    }
+    #ebox{
+        background-color: white; 
+        width: 225px; 
+        height: 60px; 
+        align-content: center;
+    }
+    #foot2{
+        display: flex; 
+        justify-content: space-between; 
+        margin: 0px 60px 0px 60px;
+    }
+
+    @media screen and (min-width:100px) and (max-width:480px) {
+            /* navbar */
+    #navbar{
+        width: 480px;
+        position:fixed;
+        background-color: white;
+    }
+    /* horizotal line */
+    #hrline{
+        width: 480px;
+        background-color: orangered;
+    }   
+    .rightnav{
+        display: none;
+    }
+    .manu{
+        display: block;
+        padding: 30px;
+    }
+    #cont1{
+        width: 430px;
+    }
+    /* contact */
+    #contact{
+        width: 440px;
+        margin: 20px;
+        display: grid;
+    }
+    .contact{
+        width: 430px;
+    }
+    .img{
+        width: 430px;
+    }
+
+    /* footer */
+    footer{
+        width: 480px;
+        height: 1050px;
+    }
+    #foot1{
+        display: grid;
+        justify-content: left;
+        padding: 30px 0px 0px 20px;
+    }
+    hr{
+        margin-top: 20px;
+    }
+    #foot2{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    #ebox{
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        padding: 10px 10px 0px 10px;
+    }   
+    #email{
+        width: 130px; 
+        height: 0px;  
+    }
+    }
+
+    @media screen and (min-width:481px) and (max-width:768px) {
+            /* navbar */
+    #navbar{
+        width: 768px;
+        position:fixed;
+        background-color: white;
+    }
+    /* horizotal line */
+    #hrline{
+        width: 768px;
+        background-color: orangered;
+    }   
+    .rightnav{
+        display: none;
+    }
+    .manu{
+        display: block;
+        padding: 30px;
+    }
+    #cont1{
+        width: 718px;
+    }
+
+    /* contact */
+    #contact{
+        width: 718px;
+        display: grid;
+    }
+    
+    /* footer */
+    footer{
+        width: 768px;
+        height: 1050px;
+    }
+    #foot1{
+        display: grid;
+        justify-content: left;
+        padding: 30px 0px 0px 20px;
+    }
+    hr{
+        margin-top: 20px;
+    }
+    #foot2{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    #ebox{
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        padding: 10px 10px 0px 10px;
+    }
+    #email{
+        width: 130px; 
+        height: 0px;  
+    }
+    }
+    
+    </style>
+
+    <!-- navbar -->
+    <div id="navbar">
+        <div id="hrline"></div>
+        <nav>
+            <div class="leftnav">Logistica</div>
+            <div class="rightnav">
+            <a class="a1" href="index.html">HOME</a>
+            <a class="a2" href="about.html">ABOUT</a>
+            <a class="a2" href="service.html">SERVICES</a>
+            <a class="a2" href="page.html">PAGES</a>
+            <a class="a2" href="contact.html">CONTACT</a>
+            <div class="number">
+                <i style="color:orangered;" class="fa-solid fa-headphones"></i>
+                +012 345 6789</div>
+            </div>
+            <div class="manu">
+            <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+
+    <!-- background image -->
+    <div id="cont1">
+        <h1 class="txt">Contact</h1>
+        <h4>Home / Pages / About</h4>
+    </div>
+
+    <!-- contact -->
+     <div id="contact">
+        <div class="contact">
+            <h3>Get In Touch</h3>
+            <h1>Contact For Any Query</h1>
+            <p style="color: grey;font-size: larger;">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.
+                <a style="color:rgba(255, 0, 0, 0.669)" href="">Download Now.</a>
+            </p>
+            <form action="">
+                <div class="info">
+                    <input type="text"placeholder="Your Name">
+                    <input type="text"placeholder="Your Email">
+                    <input class="subject" type="text"placeholder="Subject">
+                    <textarea class="message" name="" id=""placeholder="Message"></textarea>
+                    <button class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div class="img">
+            <div class="area">
+                <div class="location">
+                    <h4 style="margin: 0px;">New York</h4>
+                    <p style="margin: 5px 0px 15px 0px;color:grey;">United State</p>
+                    <a style="color:skyblue;" href="">View larg map</a>
+                </div> 
+                <div class="direction">
+                    <i style="color: skyblue;" class="fa-sharp-duotone fa-solid fa-route"></i>
+                    <br>
+                    <a style="color:skyblue;" href="">Direction</a>
+                </div> 
+            </div>     
+        </div>
+     </div>
+    
+    <!--footer-->
+    <footer>
+        <div id="foot1">
+            <div class="f1">
+                <h2>Address</h2>
+                <p><i style="padding-right: 10px;" class="fa-solid fa-location-dot"></i>123 Street, New York, USA</p>
+                <p><i style="padding-right: 10px;" class="fa-solid fa-phone"></i>+012 345 67890</p>
+                <p><i style="padding-right: 10px;" class="fa-solid fa-envelope"></i>info@example.com</p>
+                <i style="border: 1px solid white;color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; align-content: center; margin-left: 2px;" class="fa-brands fa-twitter"></i>
+                <i style="border: 1px solid white;color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; align-content: center; margin-left: 2px;" class="fa-brands fa-facebook"></i>
+                <i style="border: 1px solid white;color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; align-content: center; margin-left: 2px;" class="fa-brands fa-youtube"></i>
+                <i style="border: 1px solid white;color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; align-content: center; margin-left: 2px;" class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="f1">
+                <h2>Services</h2>
+                <a href="#">> Air Freight</a><br><br>
+                <a href="#">> Sea Freight</a><br><br>
+                <a href="#">> Road Freight</a><br><br>
+                <a href="#">> Logistic Solutions</a><br><br>
+                <a href="#">> Industry Solutions</a><br>    
+            </div>
+            <div class="f1">
+                <h2>Quick Links</h2>
+                <a href="#">> About Us</a><br><br>
+                <a href="#">> Contact Us</a><br><br>
+                <a href="#">> Our Services</a><br><br>
+                <a href="#">> Terms & Conditions</a><br><br>
+                <a href="#">> Support</a><br>
+                
+            </div>
+            <div class="f1">
+                <h2>Newspaper</h2>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div id="ebox">
+                    <input style="padding: 0px;" id="email" type="text" placeholder="  Your email">
+                    <button id="signup"><b>SignUp</b></button>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: 50px;">
+
+        <div id="foot2">
+        <p>© Your Site Name, All Right Reserved.</p>
+        <p>Designed By HTML Codex<br>Distributed By ThemeWagon</p>
+        </div>
+    </footer>
+</body>
+</html>
